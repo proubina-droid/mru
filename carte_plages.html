@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0960f1c73579904d93f02b787ff06388 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0960f1c73579904d93f02b787ff06388" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0960f1c73579904d93f02b787ff06388 = L.map(
+                "map_0960f1c73579904d93f02b787ff06388",
+                {
+                    center: [-20.3, 57.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d8a3ee0d298cad6586b0cd4c29a6e7d2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d8a3ee0d298cad6586b0cd4c29a6e7d2.addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var marker_c160641049c545b5da5ff3f20e5201d6 = L.marker(
+                [-20.2744, 57.3631],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_80f9c2d6fefb5d43373cb1bbb165456f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "water",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a11795450e876565f6aa1264a13f0be6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c0e07cbd95b9d5c7e43c9fa6138db63 = $(`<div id="html_3c0e07cbd95b9d5c7e43c9fa6138db63" style="width: 100.0%; height: 100.0%;">     <h3>Flic en Flac</h3>     <p>Longue plage de sable, eaux calmes, populaire pour la baignade et les couchers de soleil.</p>     <p><strong>Activities:</strong> Swimming, Snorkeling, Sunbathing</p>     </div>`)[0];
+                popup_a11795450e876565f6aa1264a13f0be6.setContent(html_3c0e07cbd95b9d5c7e43c9fa6138db63);
+            
+        
+
+        marker_c160641049c545b5da5ff3f20e5201d6.bindPopup(popup_a11795450e876565f6aa1264a13f0be6)
+        ;
+
+        
+    
+    
+            marker_c160641049c545b5da5ff3f20e5201d6.bindTooltip(
+                `<div>
+                     Flic en Flac
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c160641049c545b5da5ff3f20e5201d6.setIcon(icon_80f9c2d6fefb5d43373cb1bbb165456f);
+            
+    
+            var marker_92d07fd7a2949ad9c78f4378202645d7 = L.marker(
+                [-20.4594, 57.3275],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_5811fa393321498dd56de55460178ead = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c95d0c6f10e997544a332bf1f7bab16 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_13f332f5e7bee73eab073cf5e1cda6c4 = $(`<div id="html_13f332f5e7bee73eab073cf5e1cda6c4" style="width: 100.0%; height: 100.0%;">     <h3>Le Morne</h3>     <p>Superbe plage au pied du Morne Brabant, célèbre pour les sports nautiques.</p>     <p><strong>Activities:</strong> Kitesurfing, Windsurfing, Hiking Le Morne</p>     </div>`)[0];
+                popup_7c95d0c6f10e997544a332bf1f7bab16.setContent(html_13f332f5e7bee73eab073cf5e1cda6c4);
+            
+        
+
+        marker_92d07fd7a2949ad9c78f4378202645d7.bindPopup(popup_7c95d0c6f10e997544a332bf1f7bab16)
+        ;
+
+        
+    
+    
+            marker_92d07fd7a2949ad9c78f4378202645d7.bindTooltip(
+                `<div>
+                     Le Morne
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_92d07fd7a2949ad9c78f4378202645d7.setIcon(icon_5811fa393321498dd56de55460178ead);
+            
+    
+            var marker_c0eabaa1a270dd709a92657cd22bb8fb = L.marker(
+                [-20.2167, 57.7833],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_fc7a812ad9f457e271fe226d1339c69d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "water",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b068126be978950e3b1fd4772676410f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0f5f3bba6eeadbd2fd4edc75c09385d5 = $(`<div id="html_0f5f3bba6eeadbd2fd4edc75c09385d5" style="width: 100.0%; height: 100.0%;">     <h3>Belle Mare</h3>     <p>Belle plage de sable blanc sur la côte est, idéale pour la baignade et la détente.</p>     <p><strong>Activities:</strong> Swimming, Sunbathing, Boating</p>     </div>`)[0];
+                popup_b068126be978950e3b1fd4772676410f.setContent(html_0f5f3bba6eeadbd2fd4edc75c09385d5);
+            
+        
+
+        marker_c0eabaa1a270dd709a92657cd22bb8fb.bindPopup(popup_b068126be978950e3b1fd4772676410f)
+        ;
+
+        
+    
+    
+            marker_c0eabaa1a270dd709a92657cd22bb8fb.bindTooltip(
+                `<div>
+                     Belle Mare
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c0eabaa1a270dd709a92657cd22bb8fb.setIcon(icon_fc7a812ad9f457e271fe226d1339c69d);
+            
+    
+            var marker_e9be1791971ea19020676289c0147ea6 = L.marker(
+                [-20.0333, 57.55],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_e0baf6d7d4dcaf0527c4f539446af9fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "water",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f2ec2602445245a03c592bc0c27aa23 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88dbe721d3f1c2cf00b3913c86b9bdbd = $(`<div id="html_88dbe721d3f1c2cf00b3913c86b9bdbd" style="width: 100.0%; height: 100.0%;">     <h3>Trou aux Biches</h3>     <p>Eau peu profonde et claire, idéale pour les familles et le snorkeling.</p>     <p><strong>Activities:</strong> Swimming, Snorkeling, Glass-bottom boat trips</p>     </div>`)[0];
+                popup_1f2ec2602445245a03c592bc0c27aa23.setContent(html_88dbe721d3f1c2cf00b3913c86b9bdbd);
+            
+        
+
+        marker_e9be1791971ea19020676289c0147ea6.bindPopup(popup_1f2ec2602445245a03c592bc0c27aa23)
+        ;
+
+        
+    
+    
+            marker_e9be1791971ea19020676289c0147ea6.bindTooltip(
+                `<div>
+                     Trou aux Biches
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9be1791971ea19020676289c0147ea6.setIcon(icon_e0baf6d7d4dcaf0527c4f539446af9fe);
+            
+    
+            var marker_96b9b929cff264e4b0a09de5344b7b1d = L.marker(
+                [-20.0333, 57.5833],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_9ffddb6688e1e31999053d01db161e21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "water",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13f3f13f37c3462d8ebe478d2f1c4239 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_005c9f35a3be3803fc1ffc6f10eb1c50 = $(`<div id="html_005c9f35a3be3803fc1ffc6f10eb1c50" style="width: 100.0%; height: 100.0%;">     <h3>Pereybere</h3>     <p>Plage animée avec de nombreux restaurants et boutiques à proximité.</p>     <p><strong>Activities:</strong> Swimming, Shopping, Dining</p>     </div>`)[0];
+                popup_13f3f13f37c3462d8ebe478d2f1c4239.setContent(html_005c9f35a3be3803fc1ffc6f10eb1c50);
+            
+        
+
+        marker_96b9b929cff264e4b0a09de5344b7b1d.bindPopup(popup_13f3f13f37c3462d8ebe478d2f1c4239)
+        ;
+
+        
+    
+    
+            marker_96b9b929cff264e4b0a09de5344b7b1d.bindTooltip(
+                `<div>
+                     Pereybere
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_96b9b929cff264e4b0a09de5344b7b1d.setIcon(icon_9ffddb6688e1e31999053d01db161e21);
+            
+    
+            var marker_2d852fe1009a7e78dc5d25d8d94d30b2 = L.marker(
+                [-20.4333, 57.7167],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_9ea91617dcc0a85e07511897c229dda5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88fbe2997a96ad2e411d7f3c6f15e64b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ef21b06d1d1c33b8845e3d5903d7822a = $(`<div id="html_ef21b06d1d1c33b8845e3d5903d7822a" style="width: 100.0%; height: 100.0%;">     <h3>Blue Bay</h3>     <p>Connue pour son parc marin et ses excellentes possibilités de snorkeling et de plongée.</p>     <p><strong>Activities:</strong> Snorkeling, Diving, Glass-bottom boat trips</p>     </div>`)[0];
+                popup_88fbe2997a96ad2e411d7f3c6f15e64b.setContent(html_ef21b06d1d1c33b8845e3d5903d7822a);
+            
+        
+
+        marker_2d852fe1009a7e78dc5d25d8d94d30b2.bindPopup(popup_88fbe2997a96ad2e411d7f3c6f15e64b)
+        ;
+
+        
+    
+    
+            marker_2d852fe1009a7e78dc5d25d8d94d30b2.bindTooltip(
+                `<div>
+                     Blue Bay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2d852fe1009a7e78dc5d25d8d94d30b2.setIcon(icon_9ea91617dcc0a85e07511897c229dda5);
+            
+    
+            var marker_d354577f4f013c93fbc6739bbcefbf48 = L.marker(
+                [-20.1833, 57.4833],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_600d11556fcfcf5f3960253cbbbf0624 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "water",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f3066b1a104a64d3e22b546ea8abef4e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_89f6a823b7fbf504eb50c9b0a6fe22c5 = $(`<div id="html_89f6a823b7fbf504eb50c9b0a6fe22c5" style="width: 100.0%; height: 100.0%;">     <h3>Mont Choisy</h3>     <p>L'une des plus longues plages de Maurice, idéale pour une promenade tranquille.</p>     <p><strong>Activities:</strong> Swimming, Sunbathing, Walking</p>     </div>`)[0];
+                popup_f3066b1a104a64d3e22b546ea8abef4e.setContent(html_89f6a823b7fbf504eb50c9b0a6fe22c5);
+            
+        
+
+        marker_d354577f4f013c93fbc6739bbcefbf48.bindPopup(popup_f3066b1a104a64d3e22b546ea8abef4e)
+        ;
+
+        
+    
+    
+            marker_d354577f4f013c93fbc6739bbcefbf48.bindTooltip(
+                `<div>
+                     Mont Choisy
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d354577f4f013c93fbc6739bbcefbf48.setIcon(icon_600d11556fcfcf5f3960253cbbbf0624);
+            
+    
+            var marker_12197d50e580eae88e86d76fd57aad93 = L.marker(
+                [-20.3167, 57.3833],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_073c0a45c0544e55582b06bf52b697e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11e3a85b33422d926be672a35432c09d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4ef1f4deeca4e5fc27f7610b77249c7 = $(`<div id="html_c4ef1f4deeca4e5fc27f7610b77249c7" style="width: 100.0%; height: 100.0%;">     <h3>Tamarin</h3>     <p>Spot de surf populaire, également connu pour l'observation des dauphins.</p>     <p><strong>Activities:</strong> Surfing, Dolphin watching, Fishing</p>     </div>`)[0];
+                popup_11e3a85b33422d926be672a35432c09d.setContent(html_c4ef1f4deeca4e5fc27f7610b77249c7);
+            
+        
+
+        marker_12197d50e580eae88e86d76fd57aad93.bindPopup(popup_11e3a85b33422d926be672a35432c09d)
+        ;
+
+        
+    
+    
+            marker_12197d50e580eae88e86d76fd57aad93.bindTooltip(
+                `<div>
+                     Tamarin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_12197d50e580eae88e86d76fd57aad93.setIcon(icon_073c0a45c0544e55582b06bf52b697e8);
+            
+    
+            var marker_244644222d226dbb08e63b97c06301e9 = L.marker(
+                [-20.0167, 57.5833],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_866b825c9b7a8e873c955aafe5b4ad29 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "ship",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ede45bcf254cbc62ac4636eecf096b9e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_07480e5c783a7ab05360d9cdf5c19fbe = $(`<div id="html_07480e5c783a7ab05360d9cdf5c19fbe" style="width: 100.0%; height: 100.0%;">     <h3>Grand Baie</h3>     <p>Centre touristique animé avec une variété de sports nautiques et de vie nocturne.</p>     <p><strong>Activities:</strong> Watersports, Shopping, Nightlife</p>     </div>`)[0];
+                popup_ede45bcf254cbc62ac4636eecf096b9e.setContent(html_07480e5c783a7ab05360d9cdf5c19fbe);
+            
+        
+
+        marker_244644222d226dbb08e63b97c06301e9.bindPopup(popup_ede45bcf254cbc62ac4636eecf096b9e)
+        ;
+
+        
+    
+    
+            marker_244644222d226dbb08e63b97c06301e9.bindTooltip(
+                `<div>
+                     Grand Baie
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_244644222d226dbb08e63b97c06301e9.setIcon(icon_866b825c9b7a8e873c955aafe5b4ad29);
+            
+    
+            var marker_56d94dcb2dc1dae0be784e0f3beb4ef8 = L.marker(
+                [-20.3667, 57.3667],
+                {
+}
+            ).addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+            var icon_6f68f9776e61ae5520c3fb82cd8fc7d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "life-ring",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d4ed31c92235c3a25ac081382ae7d675 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f5da5a5371b84836fd1e6458861a0e9 = $(`<div id="html_5f5da5a5371b84836fd1e6458861a0e9" style="width: 100.0%; height: 100.0%;">     <h3>Rivière Noire</h3>     <p>Zone pittoresque avec une marina, populaire pour la pêche et la navigation de plaisance.</p>     <p><strong>Activities:</strong> Fishing, Boating, Dolphin watching</p>     </div>`)[0];
+                popup_d4ed31c92235c3a25ac081382ae7d675.setContent(html_5f5da5a5371b84836fd1e6458861a0e9);
+            
+        
+
+        marker_56d94dcb2dc1dae0be784e0f3beb4ef8.bindPopup(popup_d4ed31c92235c3a25ac081382ae7d675)
+        ;
+
+        
+    
+    
+            marker_56d94dcb2dc1dae0be784e0f3beb4ef8.bindTooltip(
+                `<div>
+                     Rivière Noire
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56d94dcb2dc1dae0be784e0f3beb4ef8.setIcon(icon_6f68f9776e61ae5520c3fb82cd8fc7d0);
+            
+    
+            tile_layer_d8a3ee0d298cad6586b0cd4c29a6e7d2.addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+                marker_c160641049c545b5da5ff3f20e5201d6.setIcon(icon_80f9c2d6fefb5d43373cb1bbb165456f);
+            
+    
+                marker_92d07fd7a2949ad9c78f4378202645d7.setIcon(icon_5811fa393321498dd56de55460178ead);
+            
+    
+                marker_c0eabaa1a270dd709a92657cd22bb8fb.setIcon(icon_fc7a812ad9f457e271fe226d1339c69d);
+            
+    
+                marker_e9be1791971ea19020676289c0147ea6.setIcon(icon_e0baf6d7d4dcaf0527c4f539446af9fe);
+            
+    
+                marker_96b9b929cff264e4b0a09de5344b7b1d.setIcon(icon_9ffddb6688e1e31999053d01db161e21);
+            
+    
+                marker_2d852fe1009a7e78dc5d25d8d94d30b2.setIcon(icon_9ea91617dcc0a85e07511897c229dda5);
+            
+    
+                marker_d354577f4f013c93fbc6739bbcefbf48.setIcon(icon_600d11556fcfcf5f3960253cbbbf0624);
+            
+    
+                marker_12197d50e580eae88e86d76fd57aad93.setIcon(icon_073c0a45c0544e55582b06bf52b697e8);
+            
+    
+                marker_244644222d226dbb08e63b97c06301e9.setIcon(icon_866b825c9b7a8e873c955aafe5b4ad29);
+            
+    
+                marker_56d94dcb2dc1dae0be784e0f3beb4ef8.setIcon(icon_6f68f9776e61ae5520c3fb82cd8fc7d0);
+            
+    
+            tile_layer_d8a3ee0d298cad6586b0cd4c29a6e7d2.addTo(map_0960f1c73579904d93f02b787ff06388);
+        
+    
+                marker_c160641049c545b5da5ff3f20e5201d6.setIcon(icon_80f9c2d6fefb5d43373cb1bbb165456f);
+            
+    
+                marker_92d07fd7a2949ad9c78f4378202645d7.setIcon(icon_5811fa393321498dd56de55460178ead);
+            
+    
+                marker_c0eabaa1a270dd709a92657cd22bb8fb.setIcon(icon_fc7a812ad9f457e271fe226d1339c69d);
+            
+    
+                marker_e9be1791971ea19020676289c0147ea6.setIcon(icon_e0baf6d7d4dcaf0527c4f539446af9fe);
+            
+    
+                marker_96b9b929cff264e4b0a09de5344b7b1d.setIcon(icon_9ffddb6688e1e31999053d01db161e21);
+            
+    
+                marker_2d852fe1009a7e78dc5d25d8d94d30b2.setIcon(icon_9ea91617dcc0a85e07511897c229dda5);
+            
+    
+                marker_d354577f4f013c93fbc6739bbcefbf48.setIcon(icon_600d11556fcfcf5f3960253cbbbf0624);
+            
+    
+                marker_12197d50e580eae88e86d76fd57aad93.setIcon(icon_073c0a45c0544e55582b06bf52b697e8);
+            
+    
+                marker_244644222d226dbb08e63b97c06301e9.setIcon(icon_866b825c9b7a8e873c955aafe5b4ad29);
+            
+    
+                marker_56d94dcb2dc1dae0be784e0f3beb4ef8.setIcon(icon_6f68f9776e61ae5520c3fb82cd8fc7d0);
+            
+</script>
+</html>
